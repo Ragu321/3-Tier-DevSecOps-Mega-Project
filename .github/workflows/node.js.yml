@@ -72,7 +72,7 @@ jobs:
         with:
           projectBaseDir: client 
           args: >
-            -Dsonar.projectName=Myorg_client"
+            -Dsonar.projectName=Myorg_client
             -Dsonar.projectKey=myorg_client
             -Dsonar.sources=. 
             -Dsonar.exclusions=**/node_modules/**,**/dist/**,**/build/** 
