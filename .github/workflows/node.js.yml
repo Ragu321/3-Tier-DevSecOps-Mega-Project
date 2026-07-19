@@ -31,6 +31,7 @@ jobs:
 
   gitleaks-scan:
     runs-on: Agent-1
+    needs: compile
     steps: 
       - name: checkout code 
         uses: actions/checkout@v4
@@ -45,6 +46,7 @@ jobs:
 
   Trivy_fs_scan:
       runs-on: Agent-1
+      needs: gitleaks-scan
       steps:
         - name: Checkout code
           uses: actions/checkout@v4
