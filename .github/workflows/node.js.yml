@@ -83,7 +83,7 @@ jobs:
             
   Sonar_backend:
     runs-on: Agent-1
-    needs: Trivy_fs_scan
+    needs:  Sonar_frontend
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
