@@ -21,13 +21,14 @@ jobs:
           
       - name: Frontend Compilation (syntax error)
         run: |
-          cd api 
+          cd client  
           find . -name "*.js" -exec node --check {} + 
 
       - name: Backend compilation (syntax error) 
         run: |
           cd api 
           find . -name "*.js" -exec node --check {} + 
+          
          
 
 
