@@ -40,8 +40,8 @@ jobs:
 
       - name: gitleaks scan 
         run: | 
-          git leaks detect --source ./client --exit-code 1
-          git leaks detect --source ./api --exit-code 1 
+          gitleaks detect --source ./client --exit-code 1
+          gitleaks detect --source ./api --exit-code 1 
         
       
          
